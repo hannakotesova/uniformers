@@ -30,7 +30,7 @@ class QuaTrainConfig(builder.BuilderConfig):
                     "https://github.com/tnhaider/DLK/raw/9b896f104bd282974244a40ddeaf9432a25922ba/DLK/standard/dlk.v5.german.poetry.corpus.full.json.zip",
                 ]
             case "en":
-                self.data_urls = "https://github.com/tnhaider/metrical-tagging-in-the-wild/raw/c70f5ab7dfd865673cf9e9a9a36e54fc5445273d/data/English/LargeCorpus/eng_gutenberg_measures_all.json.zip"
+                self.data_urls = https://github.com/hannakotesova/uniformers/blob/main/eng_gutenberg_measures_all_2.json.zip #"https://github.com/tnhaider/metrical-tagging-in-the-wild/raw/c70f5ab7dfd865673cf9e9a9a36e54fc5445273d/data/English/LargeCorpus/eng_gutenberg_measures_all.json.zip"
             case _:
                 raise ValueError
 
