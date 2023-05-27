@@ -232,6 +232,11 @@ if __name__ == "__main__":
         rhyme_model_name=args.rhyme_model_name_or_path,
         lang=args.lang
     )
+    print(rhymes)
+    print()
+    print(meters)
+    print()
+    print(levels)
 
     for quatrain, rhyme, meter, level in zip(quatrains, rhymes, meters, levels):
         quatrain_width = max([len(verse) for verse in quatrain])
