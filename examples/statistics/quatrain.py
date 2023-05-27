@@ -73,8 +73,6 @@ if __name__ == "__main__":
     args = argument_parser.parse_args()
     makedirs(args.out_dir, exist_ok=True)
     with open(join(args.out_dir, f"quatrain-statistics.json"), "w") as fp:
-        de_stats, de_dataset = quatrain_stats("de", args)
         en_stats, en_dataset = quatrain_stats("en", args)
-        dump({"de": de_stats, "en": en_stats}, fp)
-        de_dataset.to_json(join(args.out_dir, "QuaTrain-de.json"))
+        dump({"en": en_stats}, fp)
         en_dataset.to_json(join(args.out_dir, "QuaTrain-en.json"))
